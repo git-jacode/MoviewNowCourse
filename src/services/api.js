@@ -1,13 +1,13 @@
 import firebase from 'firebase';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyCkayVHA8SoNLcp919hkbEeEv7rl0otxmY',
-  authDomain: 'movienow-9a288.firebaseapp.com',
-  databaseURL: 'https://movienow-9a288.firebaseio.com',
-  projectId: 'movienow-9a288',
-  storageBucket: 'movienow-9a288.appspot.com',
-  messagingSenderId: '297164063048',
-  appId: '1:297164063048:web:1cd323dc02e934ae46b37d',
+  apiKey: "AIzaSyAbhoWrQSCQGW3tDsqJllWeNsbbQbXRPcc",
+  authDomain: "moviejacode.firebaseapp.com",
+  databaseURL: "https://moviejacode.firebaseio.com",
+  projectId: "moviejacode",
+  storageBucket: "moviejacode.appspot.com",
+  messagingSenderId: "907424982616",
+  appId: "1:907424982616:web:f3f3b53e5aec418f9b8c2d"
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);

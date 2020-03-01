@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './styles.scss';
 import { Container, Button } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 import firebase from 'firebase';
@@ -38,41 +39,18 @@ class ListEpisode extends Component {
     return (
       <>
         <Header history={this.props.history} />
-        <Container
-          style={{
-            paddingTop: 50,
-            paddingLeft: 10,
-            color: '#fff',
-          }}
-        >
-          <h2 style={{ color: '#fff', textAlign: 'center' }}>
+        <Container className="container">
+          <h2>
             {this.state.name}
           </h2>
-          <hr
-            style={{ backgroundColor: `rgba(252,252,252,0.5)`, marginTop: 20 }}
-          />
-          <div>
-            <ul style={{ listStyleType: 'none', marginTop: 50 }}>
+          <hr/>
+          <div className="list">
+            <ul >
               {this.state.episodes.map(e => (
-                <li
-                  key={e.id}
-                  style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    marginTop: 20,
-                    verticalAlign: 'middle',
-                  }}
-                >
+                <li key={e.id}>
                   {e.name}
                   <Button
-                    onClick={() => this.handleWatchEpisode(e.url_movie, e.name)}
-                    style={{
-                      marginLeft: 50,
-                      padding: 5,
-                      marginBottom: 5,
-                      marginTop: -10,
-                    }}
-                  >
+                    onClick={() => this.handleWatchEpisode(e.url_movie, e.name)}>
                     Watch
                   </Button>
                 </li>
