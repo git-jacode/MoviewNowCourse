@@ -1,0 +1,36 @@
+.container {
+
+    padding-top: 50px;
+    padding-left: 10px;
+    color: #fff;
+
+    h2 {
+        text-align: center;
+    }
+
+    hr {
+        background: rgba(252,252,252,0.5);
+        margin-top: 20px;
+    }
+}
+
+
+
+.list {
+    margin-top: 50px;
+
+    li {
+
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        vertical-align: middle;
+
+        button {
+            margin-left: 50px;
+            padding: 5px;
+            margin-bottom: 5px;
+            margin-top: -10px;
+        }
+    }
+}
